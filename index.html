@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thigas Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="style.css" rel="stylesheet">
 </head>
 
@@ -12,7 +13,7 @@
 
     <div class="home-page">
             
-        <img src="./assets/images/Thigassss.JPG" class="main-pic">
+        <img src="./assets/images/main-icon.jpeg" class="main-pic">
 
         <div class="home-text">
             <h1 class="text-name">Thiago Ferreira</h1>
@@ -25,17 +26,20 @@
                 a muito tempo da minha vida.
             </p>
 
-            <a href="https://www.instagram.com/itsthiagow/"><button class="btn insta-btn">Instagram</button></a>
-            <a href="https://github.com/itsthiagow"><button class="btn insta-btn">Github</button></a>
-            <a href="https://www.behance.net/itsthiagow"><button class="btn insta-btn">Behance</button></a>
+            <div class="socials">
+                <a href="https://www.instagram.com/itsthiagow/" class="fa fa-instagram"></a>
+                <a href="https://github.com/itsthiagow" class="fa fa-github"></a>
+                <a href="https://www.linkedin.com/in/itsthiagow/" class="fa fa-linkedin"></a>
+                <a href="https://www.behance.net/itsthiagow?tracking_source=search_projects%7Citsthiagow" class="fa fa-behance"></a>
+            </div>
                 
             </div>
         </div>
 
         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-        <script> /* script para texto animado */
-            var typed = new Typed(".auto-type",{
+        <script> /* script para texto animado em js */
+            const typed = new Typed(".auto-type",{
                 strings : ["Motion Designer", "Estudante de programação", "Aspirante Web Developer"],
                 typeSpeed : 110,
                 backspeed : 500,
